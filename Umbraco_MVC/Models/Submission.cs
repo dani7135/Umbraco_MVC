@@ -17,7 +17,7 @@ namespace Umbraco_MVC.Models
         [Required]
         [Display(Name = " Last Name")]
         public string LastName { get; set; }
-        [Required]
+        [Required] 
         [EmailAddress]
         public string Email { get; set; }
         [Required]
