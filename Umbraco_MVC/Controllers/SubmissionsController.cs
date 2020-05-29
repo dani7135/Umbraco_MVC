@@ -20,9 +20,15 @@ namespace Umbraco_MVC.Controllers
         }
 
         // GET: Submissions
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Submissions.ToListAsync());
+            var sub = from su in _context.Submissions
+                      select su;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                sub = sub.Where(s => s.SerialNumber.ToString().Contains(searchString) || s.FirstName.Contains(searchString) || s.LastName.Contains(searchString) || s.Email.Contains(searchString));
+            }
+            return View(await sub.ToListAsync());
         }
 
         // GET: Submissions/Details/5
