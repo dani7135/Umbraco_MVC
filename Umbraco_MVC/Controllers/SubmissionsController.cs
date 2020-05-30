@@ -94,7 +94,7 @@ namespace Umbraco_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Email,SerialNumber")] Submission submission)
         {
-            if (id != submission.Id)
+            if (id != submission.Id) 
             {
                 return NotFound();
             }
