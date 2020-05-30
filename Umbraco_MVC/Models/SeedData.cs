@@ -23,7 +23,7 @@ namespace Umbraco_MVC.Models
                         FirstName = "Anne",
                         LastName = "Bjørnsen",
                         Email = "Ab@1234.com",
-                        SerialNumber = 11111111
+                       // SerialNumber = 11111111
 
                     },
                       new Submission
@@ -31,7 +31,7 @@ namespace Umbraco_MVC.Models
                           FirstName = "Charlie",
                           LastName = "Davidsen",
                           Email = "CD@5678.dk",
-                          SerialNumber = 41451234
+                          //SerialNumber = 41451234
 
                       },
                       new Submission
@@ -39,7 +39,7 @@ namespace Umbraco_MVC.Models
                           FirstName = "Emma",
                           LastName = "Fralsen",
                           Email = "Emmse@7268.dk",
-                          SerialNumber = 31452948
+                         // SerialNumber = 31452948
 
                       }
 

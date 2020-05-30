@@ -23,6 +23,6 @@ namespace Umbraco_MVC.Models
         [Required]
         [Range(10000000, 99999999, ErrorMessage = "Must be 8 digits")]
         [Display(Name = "Valid product serial number")]
-        public int SerialNumber { get; set; }
+        public ICollection<SerialNumber> SerialNumber { get; set; }
     }
 }
