@@ -14,7 +14,6 @@ namespace Umbraco_MVC.Data
             : base(options)
             { }
             public DbSet<Submission> Submissions { get; set; }
-            public DbSet<SerialNumber> serialNumbers { get; set; }
       
     }
 }

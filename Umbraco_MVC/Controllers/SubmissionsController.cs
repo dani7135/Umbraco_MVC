@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Umbraco_MVC.Data;
 using Umbraco_MVC.Models;
 
-namespace Umbraco_MVC.Controllers
+namespace Umbraco_MVC.Controllers 
 {
     public class SubmissionsController : Controller
     {

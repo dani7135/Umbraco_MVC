@@ -5,7 +5,16 @@ using System.Threading.Tasks;
 
 namespace Umbraco_MVC.Services
 {
-    interface ISerialNumber
+   public interface ISerialNumber
     {
+       bool ValidedSerialsNumber(int number);
+       List<int> GetSerialsNumbers();
     }
+    public interface IAge
+    {
+       
+        bool IsValid(object value);
+        string FormatErrorMessage(string name);
+    }
+
 }
