@@ -13,9 +13,13 @@ namespace Umbraco_MVC.Models
         [Key]
         public int Id { get; set; }
         [AgeServices(18)]
-        [DisplayName("Birthday")]
-        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        public int Age { get; set; }
+        [DisplayName("Age")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0}:dd-MM-yyyy", ApplyFormatInEditMode = true)]
+        public DateTime Age { get; set; }
+       /*[Display(Name = "Age")]
+        [DataType(DataType.Date)]
+        public DateTime Age { get; set; }*/
         [Required]
         [Display(Name = " First Name")]
         public string FirstName { get; set; }
