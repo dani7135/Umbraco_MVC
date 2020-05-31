@@ -23,7 +23,7 @@ namespace Umbraco_MVC.Models
                         FirstName = "Anne",
                         LastName = "Bjørnsen",
                         Email = "Ab@1234.com",
-                        SerialNumber = 11111111
+                        SerialNumber = 11111111 
 
                     },
                       new Submission
