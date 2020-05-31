@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Umbraco_MVC.Models
 {
     public class SerialNumber
-    {
+    {//Busssines logikken skal ligge i model og validationen af den logisk ligger i services
         [Key]
         public int KeyId { get; set; }
 

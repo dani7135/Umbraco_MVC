@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Umbraco_MVC.Models
 {
     public class Submission
-    {
+    {//Busssines logikken skal ligge i model og validationen af den logisk ligger i services
         [Key]
         public int Id { get; set; }
         [Required]
