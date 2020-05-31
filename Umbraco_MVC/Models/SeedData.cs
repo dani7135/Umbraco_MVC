@@ -20,7 +20,7 @@ namespace Umbraco_MVC.Models
                 context.Submissions.AddRange(
                     new Submission
                     {
-                        Age = DateTime.Parse("1989-2-12"),
+                        //Age = DateTime.Parse("1989-2-12"),
                         FirstName = "Anne",
                         LastName = "Bjørnsen",
                         Email = "Ab@1234.com",
@@ -29,7 +29,7 @@ namespace Umbraco_MVC.Models
                     },
                       new Submission
                       {
-                          Age = DateTime.Parse("1984-3-13"),
+                          //Age = DateTime.Parse("1984-3-13"),
                           FirstName = "Charlie",
                           LastName = "Davidsen",
                           Email = "CD@5678.dk",
@@ -38,7 +38,8 @@ namespace Umbraco_MVC.Models
                       },
                       new Submission
                       {
-                          Age = DateTime.Parse("1954-3-13"),
+                         // Age = DateTime.Parse("1954-3-13"),
+                         Age=23,
                           FirstName = "Emma",
                           LastName = "Fralsen",
                           Email = "Emmse@7268.dk",

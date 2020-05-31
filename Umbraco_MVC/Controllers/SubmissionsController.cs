@@ -26,7 +26,7 @@ namespace Umbraco_MVC.Controllers
                       select su;
             if (!String.IsNullOrEmpty(searchString))
             {
-                sub = sub.Where(s => s.SerialNumber.ToString().Contains(searchString) || s.FirstName.Contains(searchString) || s.LastName.Contains(searchString) || s.Email.Contains(searchString));
+                sub = sub.Where(s => s.FirstName.Contains(searchString) || s.LastName.Contains(searchString) || s.Email.Contains(searchString));
             }
             return View(await sub.ToListAsync());
         }

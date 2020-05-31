@@ -10,8 +10,8 @@ using Umbraco_MVC.Data;
 namespace Umbraco_MVC.Migrations
 {
     [DbContext(typeof(SubmissionContext))]
-    [Migration("20200531140643_Age")]
-    partial class Age
+    [Migration("20200531215546_Number")]
+    partial class Number
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -44,7 +44,7 @@ namespace Umbraco_MVC.Migrations
 
                     b.HasIndex("SubmissionId");
 
-                    b.ToTable("SerialNumber");
+                    b.ToTable("serialNumbers");
                 });
 
             modelBuilder.Entity("Umbraco_MVC.Models.Submission", b =>
@@ -69,6 +69,9 @@ namespace Umbraco_MVC.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("SerialNumber")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Submissions");
@@ -77,7 +80,7 @@ namespace Umbraco_MVC.Migrations
             modelBuilder.Entity("Umbraco_MVC.Models.SerialNumber", b =>
                 {
                     b.HasOne("Umbraco_MVC.Models.Submission", "Submission")
-                        .WithMany("SerialNumber")
+                        .WithMany()
                         .HasForeignKey("SubmissionId");
                 });
 #pragma warning restore 612, 618

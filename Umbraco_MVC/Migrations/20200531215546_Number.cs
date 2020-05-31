@@ -2,14 +2,10 @@
 
 namespace Umbraco_MVC.Migrations
 {
-    public partial class Age : Migration
+    public partial class Number : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "SerialNumber",
-                table: "Submissions");
-
             migrationBuilder.AddColumn<int>(
                 name: "Age",
                 table: "Submissions",
@@ -17,7 +13,7 @@ namespace Umbraco_MVC.Migrations
                 defaultValue: 0);
 
             migrationBuilder.CreateTable(
-                name: "SerialNumber",
+                name: "serialNumbers",
                 columns: table => new
                 {
                     KeyId = table.Column<int>(nullable: false)
@@ -29,9 +25,9 @@ namespace Umbraco_MVC.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SerialNumber", x => x.KeyId);
+                    table.PrimaryKey("PK_serialNumbers", x => x.KeyId);
                     table.ForeignKey(
-                        name: "FK_SerialNumber_Submissions_SubmissionId",
+                        name: "FK_serialNumbers_Submissions_SubmissionId",
                         column: x => x.SubmissionId,
                         principalTable: "Submissions",
                         principalColumn: "Id",
@@ -39,26 +35,19 @@ namespace Umbraco_MVC.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_SerialNumber_SubmissionId",
-                table: "SerialNumber",
+                name: "IX_serialNumbers_SubmissionId",
+                table: "serialNumbers",
                 column: "SubmissionId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "SerialNumber");
+                name: "serialNumbers");
 
             migrationBuilder.DropColumn(
                 name: "Age",
                 table: "Submissions");
-
-            migrationBuilder.AddColumn<int>(
-                name: "SerialNumber",
-                table: "Submissions",
-                type: "int",
-                nullable: false,
-                defaultValue: 0);
         }
     }
 }

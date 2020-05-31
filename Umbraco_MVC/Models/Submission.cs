@@ -14,9 +14,8 @@ namespace Umbraco_MVC.Models
         public int Id { get; set; }
         [AgeServices(18)]
         [DisplayName("Age")]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0}:dd-MM-yyyy", ApplyFormatInEditMode = true)]
-        public DateTime Age { get; set; }
+      //  [DisplayFormat(DataFormatString = "{0}:dd-MM-yyyy", ApplyFormatInEditMode = true)]
+        public int Age { get; set; }
        /*[Display(Name = "Age")]
         [DataType(DataType.Date)]
         public DateTime Age { get; set; }*/
