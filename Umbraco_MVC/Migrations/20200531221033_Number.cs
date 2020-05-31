@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Umbraco_MVC.Migrations
 {
@@ -6,11 +7,10 @@ namespace Umbraco_MVC.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
+            migrationBuilder.AddColumn<DateTime>(
                 name: "Age",
                 table: "Submissions",
-                nullable: false,
-                defaultValue: 0);
+                nullable: true);
 
             migrationBuilder.CreateTable(
                 name: "serialNumbers",

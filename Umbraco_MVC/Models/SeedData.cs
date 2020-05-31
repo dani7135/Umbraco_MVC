@@ -38,8 +38,8 @@ namespace Umbraco_MVC.Models
                       },
                       new Submission
                       {
-                         // Age = DateTime.Parse("1954-3-13"),
-                         Age=23,
+                         Age = DateTime.Parse("1954-3-13"),
+                          //Age=23,
                           FirstName = "Emma",
                           LastName = "Fralsen",
                           Email = "Emmse@7268.dk",

@@ -10,7 +10,7 @@ using Umbraco_MVC.Data;
 namespace Umbraco_MVC.Migrations
 {
     [DbContext(typeof(SubmissionContext))]
-    [Migration("20200531215546_Number")]
+    [Migration("20200531221033_Number")]
     partial class Number
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,8 +54,8 @@ namespace Umbraco_MVC.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("Age")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
