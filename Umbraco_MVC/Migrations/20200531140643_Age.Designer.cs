@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Umbraco_MVC.Data;
 
 namespace Umbraco_MVC.Migrations
 {
     [DbContext(typeof(SubmissionContext))]
-    partial class SubmissionContextModelSnapshot : ModelSnapshot
+    [Migration("20200531140643_Age")]
+    partial class Age
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

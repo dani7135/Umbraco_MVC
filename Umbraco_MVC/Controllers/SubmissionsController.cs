@@ -60,7 +60,7 @@ namespace Umbraco_MVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Email,SerialNumber")] Submission submission)
+        public async Task<IActionResult> Create([Bind("Id,Age,FirstName,LastName,Email,SerialNumber")] Submission submission)
         {
             if (ModelState.IsValid)
             {
@@ -92,7 +92,7 @@ namespace Umbraco_MVC.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Email,SerialNumber")] Submission submission)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Age,FirstName,LastName,Email,SerialNumber")] Submission submission)
         {
             if (id != submission.Id) 
             {
