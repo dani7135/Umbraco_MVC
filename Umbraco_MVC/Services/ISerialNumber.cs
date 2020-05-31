@@ -12,9 +12,16 @@ namespace Umbraco_MVC.Services
     }
     public interface IAge
     {
-       
         bool IsValid(object value);
         string FormatErrorMessage(string name);
     }
 
+    public interface IEntries
+    {
+
+    }
+    public interface IDrawing
+    {
+
+    }
 }

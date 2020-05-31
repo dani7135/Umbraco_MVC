@@ -33,7 +33,7 @@ namespace Umbraco_MVC.Models
         [EmailAddress]
         public string Email { get; set; }
       //  [Required]
-        [Range(10000000, 99999999, ErrorMessage = "Must be 8 digits")]
+        [Range(10000000, 99999999, ErrorMessage = "Enter vaild 8 digits serial number")]
         [Display(Name = "Valid product serial number")]//Collection<SerialNumber>
         public int SerialNumber { get; set; }
     }
