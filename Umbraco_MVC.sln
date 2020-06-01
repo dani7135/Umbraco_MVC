@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco_MVC", "Umbraco_MVC\Umbraco_MVC.csproj", "{1DEA5186-34E2-492C-B336-34629CAF7CBA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary2", "ClassLibrary2\ClassLibrary2.csproj", "{E5D9AC77-072D-408F-9A39-241A9D51CA83}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Database.Entity", "Api.Database.Entity\Api.Database.Entity.csproj", "{A048B472-9BBB-4233-8305-0F8C87AF656B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Database.Entity", "Api.Database.Entity\Api.Database.Entity.csproj", "{A048B472-9BBB-4233-8305-0F8C87AF656B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{1DEA5186-34E2-492C-B336-34629CAF7CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DEA5186-34E2-492C-B336-34629CAF7CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DEA5186-34E2-492C-B336-34629CAF7CBA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5D9AC77-072D-408F-9A39-241A9D51CA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5D9AC77-072D-408F-9A39-241A9D51CA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5D9AC77-072D-408F-9A39-241A9D51CA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5D9AC77-072D-408F-9A39-241A9D51CA83}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A048B472-9BBB-4233-8305-0F8C87AF656B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A048B472-9BBB-4233-8305-0F8C87AF656B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A048B472-9BBB-4233-8305-0F8C87AF656B}.Release|Any CPU.ActiveCfg = Release|Any CPU

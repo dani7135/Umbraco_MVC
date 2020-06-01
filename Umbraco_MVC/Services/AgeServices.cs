@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Umbraco_MVC.Services;
 
 namespace Umbraco_MVC.Services
 {
     public class AgeServices : ValidationAttribute, IAge
     {//Her skal validationen af alder ligge
      //    public class DateMinimumAgeAttribute : ValidationAttribute
-        public int MinAge {get;}
+        public int MinAge { get; }
         public AgeServices(int minAge)
         {
             MinAge = minAge;
@@ -32,6 +28,6 @@ namespace Umbraco_MVC.Services
             return string.Format(ErrorMessageString, name, MinAge);
         }
 
-       
+
     }
 }

@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Umbraco_MVC.Data;
 using Umbraco_MVC.Models;
 
-namespace Umbraco_MVC.Controllers 
+namespace Umbraco_MVC.Controllers
 {
     public class SubmissionsController : Controller
     {
@@ -94,7 +92,7 @@ namespace Umbraco_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Age,FirstName,LastName,Email,SerialNumber")] Submission submission)
         {
-            if (id != submission.Id) 
+            if (id != submission.Id)
             {
                 return NotFound();
             }

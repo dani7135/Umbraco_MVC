@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Umbraco_MVC.Data;
 using System;
 using System.Linq;
+using Umbraco_MVC.Data;
 
 namespace Umbraco_MVC.Models
 {
@@ -24,7 +24,7 @@ namespace Umbraco_MVC.Models
                         FirstName = "Anne",
                         LastName = "Bjørnsen",
                         Email = "Ab@1234.com",
-                       // SerialNumber = 11111111
+                        // SerialNumber = 11111111
 
                     },
                       new Submission
@@ -38,12 +38,12 @@ namespace Umbraco_MVC.Models
                       },
                       new Submission
                       {
-                         Age = DateTime.Parse("1954-3-13"),
+                          Age = DateTime.Parse("1954-3-13"),
                           //Age=23,
                           FirstName = "Emma",
                           LastName = "Fralsen",
                           Email = "Emmse@7268.dk",
-                         // SerialNumber = 31452948
+                          // SerialNumber = 31452948
 
                       }
 

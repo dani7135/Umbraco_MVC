@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Umbraco_MVC.Services
 {
-   public interface ISerialNumber
+    public interface ISerialNumber
     {
-       bool ValidedSerialsNumber(int number);
-       List<int> GetSerialsNumbers();
+        bool ValidedSerialsNumber(int number);
+        List<int> GetSerialsNumbers();
     }
     public interface IAge
     {

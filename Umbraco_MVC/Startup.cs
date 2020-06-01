@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Api.Database.Entity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Umbraco_MVC.Data;
 
 namespace Umbraco_MVC
@@ -29,7 +25,9 @@ namespace Umbraco_MVC
 
             services.AddDbContext<SubmissionContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("SubmissionContext")));
-         
+
+            services.AddDbContext<DataContext>(options =>
+           options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +36,7 @@ namespace Umbraco_MVC
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            } 
+            }
             else
             {
                 app.UseExceptionHandler("/Home/Error");

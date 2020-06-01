@@ -1,5 +1,3 @@
-using System;
-
 namespace Umbraco_MVC.Models
 {
     public class ErrorViewModel

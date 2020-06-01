@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Umbraco_MVC.Data;
-using Umbraco_MVC.Services;
 
 namespace Umbraco_MVC.Services
 {
     public class SerialNumberServices : ISerialNumber
     {//Her skal validationen af tingene ligge
-    
+
         readonly string textFile = @".\serialNumbers.txt";
 
         public List<int> GetSerialsNumbers()
@@ -34,14 +30,14 @@ namespace Umbraco_MVC.Services
 
         public bool ValidedSerialsNumber(int number)
         {
-            List<int> listOfNumber = GetSerialsNumbers() ;
+            List<int> listOfNumber = GetSerialsNumbers();
             foreach (var item in listOfNumber)
             {
                 if (number == item)
                 {
                     return true;
                 }
-                
+
             }
             return false;
         }
